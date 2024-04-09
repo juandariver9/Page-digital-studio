@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    background-color: #fad33e;
+}
+
+#fondo {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+
+}
