@@ -28,6 +28,15 @@ body {
     z-index: -1;
 }
 
+#circle {
+    position: absolute;
+    width: 8vw;
+    bottom: 11vw;
+    left: 66vw;
+    z-index: 1;
+    
+}
+
 .text {
     font-family: Lato;
     position: absolute;
@@ -65,6 +74,10 @@ body {
         width: 100%;
         height: auto;
     } 
+    #circle {
+        bottom: 7vw;
+        filter: invert(100%);
+    }
 }
 
 
