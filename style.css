@@ -1,11 +1,41 @@
+@font-face {
+    font-family: Lato;
+    src: url(/fonts/Lato-Regular.ttf);
+}
+
 body {
     margin: 0;
     background-color: #fad33e;
+    overflow: hidden;
+}
+
+#contenedor-fondo {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 60vh; /* 60% del viewport height */
+    overflow: hidden;
+    display: flex; /* Usamos flexbox para alinear verticalmente la imagen */
+    align-items: flex-end; /* Alineamos la imagen al inicio del contenedor */
 }
 
 #fondo {
     position: absolute;
     bottom: 0;
-    width: 100vw;
-
+    width: 100%;
+    height: auto;
 }
+
+@media (min-width: 1150px) {
+
+    #fondo {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+    } 
+}
+
+
+
+
