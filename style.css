@@ -3,6 +3,7 @@
     src: url(/fonts/Lato-Regular.ttf);
 }
 
+
 body {
     margin: 0;
     background-color: #fad33e;
@@ -13,10 +14,10 @@ body {
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 60vh; /* 60% del viewport height */
+    height: 50vh; 
     overflow: hidden;
-    display: flex; /* Usamos flexbox para alinear verticalmente la imagen */
-    align-items: flex-end; /* Alineamos la imagen al inicio del contenedor */
+    display: flex; 
+    align-items: flex-end; 
 }
 
 #fondo {
@@ -24,7 +25,37 @@ body {
     bottom: 0;
     width: 100%;
     height: auto;
+    z-index: -1;
 }
+
+.text {
+    font-family: Lato;
+    position: absolute;
+    font-size: 5vw;
+    left: 10vw;
+    margin: 0;
+    top: 3vh;
+    color: #1D1E23;
+
+}
+
+#two {
+    top: 18vh;
+    font-size: 7vw;
+    border: #1D1E23 solid 1.5px;
+    border-radius: 300px;
+    left: 5.5vw;
+    padding: 0px 50px 15px 50px;
+}
+
+#three {
+    top: 40vh;
+}
+
+
+
+
+
 
 @media (min-width: 1150px) {
 
