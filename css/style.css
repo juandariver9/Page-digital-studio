@@ -1,21 +1,21 @@
 @font-face {
     font-family: Lato;
-    src: url(/fonts/Lato-Regular.ttf);
+    src: url(/storage/font/Lato-Regular/Lato-Regular.ttf);
 }
 
 @font-face {
     font-family: LatoBo;
-    src: url(/fonts/Lato-Bold.ttf);
+    src: url(/storage/font/Lato-Bold/Lato-Bold.ttf);
 }
 
 @font-face {
     font-family: LatoBl;
-    src: url(/fonts/Lato-Black.ttf);
+    src: url(/storage/font/Lato-Black/Lato-Black.ttf);
 }
 
 @font-face {
     font-family: LatoL;
-    src: url(/fonts/Lato-Light.ttf);
+    src: url(/storage/font/Lato-Light/Lato-Light.ttf);
 }
 
 body {
