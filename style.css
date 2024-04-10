@@ -3,11 +3,26 @@
     src: url(/fonts/Lato-Regular.ttf);
 }
 
+@font-face {
+    font-family: LatoBo;
+    src: url(/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: LatoBl;
+    src: url(/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: LatoL;
+    src: url(/fonts/Lato-Light.ttf);
+}
 
 body {
     margin: 0;
     background-color: #fad33e;
     overflow: hidden;
+    font-family: LatoL;
 }
 
 #contenedor-fondo {
@@ -75,19 +90,56 @@ body {
 #magnet3 {
     display: flex;
     height: 10vw;
-    position: relative; /* Ajusta la posición relativa para que los desplazamientos sean relativos a este contenedor */
+    position: relative; 
 }
 
 
 
 #magnet2 {
-    bottom: 9vw; /* Ajusta la posición de la segunda imagen */
+    bottom: 9vw; 
 }
 
 #magnet3 {
-    bottom: 18vw; /* Ajusta la posición de la tercera imagen */
+    bottom: 18vw; 
 }
 
+#boton {
+    position: absolute;
+    font-family: Lato;
+    color: white;
+    background-color: black;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 50px 15px 50px;
+}
+
+.AbsoluteContainer {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    right: 7vw;
+    top: 5vw;
+}
+
+.uno, .dos, .tres {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.uno p, .dos p, .tres p {
+    margin: 0;
+}
+
+#t1, #t2, #t3 {
+    font-size: 4vw;
+    font-family: LatoBl;
+    margin-right: 1vw;
+}
 
 
 @media (min-width: 1150px) {
@@ -99,7 +151,7 @@ body {
         height: auto;
     } 
     #circle {
-        bottom: 7vw;
+        bottom: 3vw;
         filter: invert(100%);
     }
 }
