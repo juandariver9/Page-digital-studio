@@ -1,0 +1,161 @@
+@font-face {
+    font-family: Lato;
+    src: url(/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: LatoBo;
+    src: url(/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: LatoBl;
+    src: url(/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: LatoL;
+    src: url(/fonts/Lato-Light.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #fad33e;
+    overflow: hidden;
+    font-family: LatoL;
+}
+
+#contenedor-fondo {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 50vh; 
+    overflow: hidden;
+    display: flex; 
+    align-items: flex-end; 
+}
+
+#fondo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+#circle {
+    position: absolute;
+    width: 8vw;
+    bottom: 11vw;
+    left: 66vw;
+    z-index: 1;
+    
+}
+
+.text {
+    font-family: Lato;
+    position: absolute;
+    font-size: 5vw;
+    left: 10vw;
+    margin: 0;
+    top: 3vh;
+    color: #1D1E23;
+
+}
+
+#two {
+    top: 18vh;
+    font-size: 7vw;
+    border: #1D1E23 solid 1.5px;
+    border-radius: 300px;
+    left: 5.5vw;
+    padding: 0px 4vw 1vw 4vw;
+}
+
+#three {
+    top: 40vh;
+}
+
+
+.iman {
+    position: absolute;
+
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+}
+
+#magnet1,
+#magnet2,
+#magnet3 {
+    display: flex;
+    height: 10vw;
+    position: relative; 
+}
+
+
+
+#magnet2 {
+    bottom: 9vw; 
+}
+
+#magnet3 {
+    bottom: 18vw; 
+}
+
+#boton {
+    position: absolute;
+    font-family: Lato;
+    color: white;
+    background-color: black;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 50px 15px 50px;
+}
+
+.AbsoluteContainer {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    right: 7vw;
+    top: 5vw;
+}
+
+.uno, .dos, .tres {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.uno p, .dos p, .tres p {
+    margin: 0;
+}
+
+#t1, #t2, #t3 {
+    font-size: 4vw;
+    font-family: LatoBl;
+    margin-right: 1vw;
+}
+
+
+@media (min-width: 1150px) {
+
+    #fondo {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+    } 
+    #circle {
+        bottom: 3vw;
+        filter: invert(100%);
+    }
+}
+
+
+
+
